@@ -1,11 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alejandra Olazagasti" />
+    <meta name="description" content="No más de 165 caracteres" />
+    <meta name="keywords" content="palabra clave 1, palabra clave2" />
+    <meta name="theme-color" content="#eee" />
+    <!-- Iconos  -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <title>Portafolio</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets\css\styles.css" />
+    <script type="module" src="assets\js\main.js" defer></script>
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="navbar grid--container">
+            <a class="navbar__logo" href="#"><i class="bx bxs-registered"></i>MAHR94</a>
+            <div id="nav" class="navbar__menu">
+                <a href="#close"><i class="bx bxs-x-circle btn__close navbar__icon"></i></a>
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a class="navbar__link active" href="#home">Inicio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#about">Acerca de Mí</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#projects">Portafolio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__toggles">
+                <div class="navbar__toggle--darkmode">
+                    <input
+                        type="checkbox"
+                        name="color-scheme"
+                        id="darkmode-toggle"
+                        class="navbar__toggle--darkmode-input"
+                    />
+                    <label for="darkmode-toggle" class="navbar__toggle--darkmode-label"></label>
+                </div>
+                <div class="navbar__toggle--language">
+                    <input
+                        type="checkbox"
+                        id="language-toggle"
+                        class="navbar__toggle--language-input"
+                    />
+                    <label
+                        for="language-toggle"
+                        class="navbar__toggle--language-label"
+                    ></label>
+                </div>
+            </div>
+            <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home">
+            <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+            <i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
+            <i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
+            <i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
+            <i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
+            <i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2"></i>
+            <i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
+            <i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2"></i>
+            <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+            <i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7"></i>
+            <i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i>
+            <div class="home__container grid--container">
+                <div class="home__image">
+                    <img src="assets\imgs\profile.jpg" alt="profile photo" title="Tu nombre" />
+                </div>
+                <ul class="home__social">
+                    <li class="home__social-item">
+                        <a href="https://www.linkedin.com/in/manuel-hernandez-552222302" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                    </li>
+                    <li class="home__social-item">
+                        <a href="https://wa.me/573182051224" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+                    </li>                    
+                    <li class="home__social-item">
+                        <a href="https://github.com/mahr940409" target="_blank"><i class="bx bxl-github"></i></a>
+                    </li>
+                    <li class="home__social-item">
+                        <a href="mailto:malejandrohernandez94@gmail.com" target="_blank"><i class="bx bx-envelope"></i></a>
+                    </li>                    
+                </ul>
+                <div class="home__info">
+                    <h1 class="home__title">Hola, soy Manuel Alejandro Hernandez Rodriguez</h1>
+                    <p class="home__description">Soy desarrollador web, apasionado por la tecnología y la programación, y tecnologo en gestion documental</p>
+                    <div class="home__text-box">
+                        <input type="text" class="home__input" placeholder="Desarrollador Web">
+                        <input type="text" class="home__input" placeholder="Tecnólogo en Gestión Documental">
+                    </div>
+                    <div class="home__buttons">
+                        <a class="btn btn--primary" type="button" href="" title="Descargar mi CV" download="my_cv" rel="noreferrer nofollow">Descargar CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">Todos los derechos reservados &copy; MAHR94</p>
+    </footer>    
 </body>
 </html>
