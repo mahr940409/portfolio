@@ -1,133 +1,149 @@
-/* Estilos para el encabezado */
 .header {
-    background-color: #333; 
-    color: #fff; 
-    padding: 20px 0; 
-  }
-  
-  .navbar {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-  }
-  
-  .navbar__logo {
-    font-size: 24px; 
-    text-decoration: none; 
-    color: #fff; 
-  }
-  
-  /* Estilos para la sección Home */
-  .home {
-    position: relative; 
-    height: 100vh; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    background-color: #f4f4f4; 
-  }
-  
-  .home__container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px; 
-    align-items: center; 
-  }
-  
-  .home__image img {
-    width: 100%; 
-    max-width: 300px; 
-    border-radius: 50%; 
-  }
-  
-  .home__social {
-    list-style: none; 
-    padding: 0; 
-    display: flex; 
-  }
-  
-  .home__social-item {
-    margin-right: 10px; 
-  }
-  
-  .home__social-item a {
-    color: #333; 
-    font-size: 20px; 
-  }
-  
-  .home__info {
-    text-align: center; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-  }
-  
-  .home__title {
-    font-size: 36px;
-    margin-bottom: 10px; 
-  }
-  
-  .home__description {
-    font-size: 18px; 
-    margin-bottom: 20px; 
-  }
-  
-  .home__buttons {
-    display: flex; 
-    justify-content: center; 
-  }
-  
-  .btn {
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    background-color: #333; 
-    color: #fff; 
-    text-decoration: none; 
-    font-size: 16px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
-  }
-  
-  .btn:hover {
-    background-color: #555; 
-  }
-  
-  /* Estilos para los cuadros de texto */
-.home__text-box {
-    margin-top: 20px; 
-    display: flex; 
-    flex-direction: row; 
+  display: block;
 }
 
-.home__input {
-    width: 100%; 
-    padding: 10px; 
-    border: 1px solid #ccc;
-    border-radius: 5px; 
-    font-size: 16px; 
-    box-sizing: border-box; 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.home__text-box + .home__text-box {
-    margin-left: 10px; 
+.navbar__logo {
+  text-decoration: none;
 }
 
-/* Estilos para el pie de página */
-.footer {
-    background-color: #333; 
-    color: #fff; 
-    padding: 20px 0; 
-    text-align: center; 
+.navbar__menu {
+  display: flex;
+  list-style: none;
 }
 
-.footer__copyright {
-    font-size: 14px; 
+.navbar__item {
+  margin-right: 20px;
 }
 
-/* Estilos para los botones de la sección Home */
+.navbar__link {
+  text-decoration: none;
+  color: black;
+}
+
+.grid--container {
+  display: grid;
+}
+
+.home__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__social {
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.home__social-item {
+  margin-right: 10px;
+}
+
+.home__social-link {
+  text-decoration: none;
+}
+
+.home__title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.home__description {
+  margin-top: 10px;
+}
+
 .home__buttons {
-    display: flex; 
-    justify-content: center; 
-    margin-top: 40px; 
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: #007bff;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about__description {
+  margin-top: 10px;
+}
+
+.about__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.about__card {
+  width: 30%;
+}
+
+.about__card--img {
+  width: 100%;
+}
+
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills__description {
+  margin-top: 10px;
+}
+
+.skills__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills__card {
+  width: calc(50% - 20px);
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.skills__card-title {
+  margin-top: 10px;
+}
+
+.skills__tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.skills__tag {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
 }
