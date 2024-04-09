@@ -567,5 +567,18 @@
 
 			<p class="footer__copy"></p>
 		</footer>
+		<script>
+			const a = document.getElementById('language-toggle')
+			a.addEventListener("change",idioma)
+			function idioma(){
+				if(a.checked==false){
+					window.location.href= "index.html"
+				} else{
+					window.location.href="english.html"
+							}			
+						}
+					a.checked= true	
+                    console.log(a.checked)
+					</script>
 	</body>
 </html>
