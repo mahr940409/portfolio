@@ -22,7 +22,7 @@ function sendEmail(e) {
 
 	if (params.name && params.email && params.subject && params.message) {
 		emailjs
-			.send('service_tk7ibzn', 'template_z85cct9', params)
+			.send('service_lyxhlph', 'template_b0i0qga', params)
 			.then(openModal());
 	}
 }
