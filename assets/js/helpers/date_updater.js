@@ -3,7 +3,7 @@ function updateCopyright() {
 
 	const copyrightElement = document.querySelector('.footer__copy');
 
-	copyrightElement.textContent = `© ${currentYear}, Todos los derechos reservados`;
+	copyrightElement.textContent = `© ${currentYear}, All rights reserved`;
 }
 
 export default updateCopyright;
